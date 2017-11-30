@@ -1,5 +1,6 @@
 # Exclude data files
 *.csv
+*home_data*
 
 # Exclude ipynb prject files
 .ipynb*
