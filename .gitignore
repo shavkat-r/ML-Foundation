@@ -1,6 +1,7 @@
 # Exclude data files
 *.csv
 *home_data*
+*amazon_baby.gl*
 
 # Exclude ipynb prject files
 .ipynb*
