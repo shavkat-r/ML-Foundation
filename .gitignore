@@ -2,6 +2,7 @@
 *.csv
 *home_data*
 *amazon_baby.gl*
+*people_wiki.gl*
 
 # Exclude ipynb prject files
 .ipynb*
