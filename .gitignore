@@ -4,6 +4,7 @@
 *amazon_baby.gl*
 *people_wiki.gl*
 *song_data.gl*
+image_t*_data*
 
 # Exclude ipynb prject files
 .ipynb*
