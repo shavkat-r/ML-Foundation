@@ -516,3 +516,84 @@ h2 { font-size: 2rem; border-bottom: 2px solid var(--accent-color); padding-bott
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Стили для карточек с примерами постов --- */
+
+.sample-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sample-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.stat-pill {
+    background-color: var(--border-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8em;
+}
+
+.source-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.source-link:hover {
+    text-decoration: underline;
+}
+
+/* Стилизация отрендеренного Markdown, чтобы было похоже на Telegram */
+.tg-format {
+    line-height: 1.6;
+}
+.tg-format p {
+    margin: 0 0 1em 0;
+}
+.tg-format p:last-child {
+    margin-bottom: 0;
+}
+.tg-format strong, .tg-format b {
+    font-weight: bold;
+}
+.tg-format em, .tg-format i {
+    font-style: italic;
+}
+.tg-format pre {
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+.tg-format code {
+    background-color: var(--border-color);
+    color: var(--primary-text-color);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.tg-format pre > code {
+    padding: 0;
+    background: none;
+}
+.tg-format .tg-spoiler {
+    background-color: var(--border-color);
+    color: var(--border-color);
+    border-radius: 4px;
+    transition: color 0.2s;
+}
+.tg-format .tg-spoiler:hover {
+    color: var(--primary-text-color);
+}
