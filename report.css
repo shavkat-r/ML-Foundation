@@ -32,15 +32,22 @@ h1 { font-size: 2.5rem; color: #fff; }
 h2 { font-size: 2rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; margin-top: 3rem; margin-bottom: 2rem;}
 .subtitle { font-size: 1.1rem; color: var(--secondary-text-color); max-width: 80%; }
 
-a, a:link, a:visited {
-    color: var(--accent-color); /* Используем наш фирменный фиолетовый цвет */
-    text-decoration: none; /* Убираем подчеркивание по умолчанию */
-    transition: color 0.2s, text-decoration 0.2s; /* Плавный переход для hover-эффекта */
+/* --- Глобальные стили для ссылок --- */
+/* 
+   Применяем стили ко всем ссылкам внутри нашего главного контейнера.
+   Селектор .main-container a более специфичен, чем просто a,
+   и поэтому он "победит" дефолтные стили браузера.
+*/
+.main-container a, 
+.main-container a:link, 
+.main-container a:visited {
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
-a:hover {
-    color: #d1b3ff; /* Более светлый оттенок фиолетового для наведения */
-    text-decoration: underline; /* Показываем подчеркивание при наведении для ясности */
+.main-container a:hover {
+    color: #d1b3ff;
+    text-decoration: underline;
 }
 
 /* --- Секции --- */
