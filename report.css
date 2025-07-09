@@ -477,3 +477,42 @@ h2 { font-size: 2rem; border-bottom: 2px solid var(--accent-color); padding-bott
     visibility: visible;
     opacity: 1;
 }
+
+/* --- Стили для секции "На чем основан анализ" --- */
+
+.foundation-container {
+    display: grid;
+    /* На больших экранах создаем 2 колонки равной ширины */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; /* Пространство между колонками */
+    margin-top: 2rem;
+}
+
+.foundation-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.foundation-title {
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.metrics-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .foundation-container {
+        /* На маленьких экранах переключаемся на одну колонку */
+        grid-template-columns: 1fr;
+    }
+}
